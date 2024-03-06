@@ -1,17 +1,20 @@
 <template>
   <div class="container m-auto d-flex flex-column justify-content-center align-items-center gap-5">
-    <h1 class="text-center">Ninja Reaction Timer</h1>
+    <!-- <h1 class="text-center">Ninja Reaction Timer</h1>
     <button @click="startGame" :disabled="isStarted" class="btn btn-success">Start Game</button>
     <Block v-if="isStarted" :delay="delay" @end="endGame" />
-    <h4 v-if="showResults">Reaction Time {{ score }} ms </h4>
+    <h4 v-if="showResults">Reaction Time {{ score }} ms </h4> -->
+    <Form />
   </div>
 </template>
 
 <script>
 import Block from "./components/Block.vue";
+import Form from "./components/Form.vue";
 export default {
   components: {
-    Block
+    Block,
+    Form
   },
   data() {
     return {
